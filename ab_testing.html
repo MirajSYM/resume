@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div>
+                  <img src="assets/img/portfolio/AB_testing.jpg" alt="British Airways Certificate">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <br><br>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>A/B Testing: Unveiling User Engagement & The Impact of Website Themes on Behavior and Beyond</h3>
+
+              <ul>
+                <li><strong>Category</strong>: Data Science</li>
+                <li><strong>Tech Stack</strong>: Python, Pandas, Numpy, Matplotlib, SciPy
+                </li>
+                <li><strong>Concept</strong>: Hypothesis Testing, Bonferroni correction
+                </li>
+              </ul>
+            </div>
+
+            <div class="portfolio-description">
+              <p>
+                This case study is completed on the dataset by
+                <a href="https://statso.io/light-theme-and-dark-theme-case-study/" target="_blank">statso.io</a>
+              </p>
+            </div>
+
+          </div>
+          <hr>
+          <div class="blog-post">
+            <h3>Situation:</h3>
+            <p>
+              In the course of conducting exploratory data analysis (EDA), we delved into a robust dataset encompassing
+              user engagement metrics and demographic information.
+              Our exploration involved scrutinizing Click Through Rates, Conversion Rates, Bounce Rates, Scroll Depths,
+              and Ages, utilizing visualizations such as box plots, scatter plots, histograms, and bar charts to reveal
+              patterns and differences associated with various themes.
+            </p>
+
+            <h3>Task:</h3>
+            <p>
+              The primary task was to investigate the influence of website themes on user engagement metrics.
+              We initiated hypothesis testing, specifically focusing on <strong>Click Through Rates</strong>,
+              <strong>Conversion Rates</strong>, and interactions with the shopping cart.
+            </p>
+
+            <h3>Action:</h3>
+            <ul>
+              <li>
+                <strong>Click Through Rate (CTR):</strong>
+                We posed the question: Does the choice of website theme impact the <strong>Click Through Rate</strong>?
+                Employing an independent t-test, we compared "Dark Theme" and "Light Theme," ultimately rejecting the
+                null hypothesis with a <strong>p-value of 0.048</strong>, signifying a significant difference in
+                <strong>Click Through Rates</strong>.
+              </li>
+              <li>
+                <strong>Conversion Rate:</strong>
+                Continuing our exploration, we questioned whether themes played a role in user sign-ups.
+                Despite a <strong>p-value of 0.635</strong>, the independent t-test did not allow us to reject the null
+                hypothesis, indicating that themes had a negligible impact on conversions.
+              </li>
+              <li>
+                <strong>Added_to_Cart:</strong>
+                Turning our attention to cart interactions, we examined whether themes guided users toward adding items
+                to their carts.
+                The chi-squared test with a <strong>p-value of 0.717</strong> led us to uphold the null hypothesis,
+                suggesting that themes had little influence on users' cart interactions.
+              </li>
+            </ul>
+
+            <h3>Result:</h3>
+            <p>
+              Recognizing the risk of inflated Type I errors in multiple hypothesis testing, we implemented the
+              <strong>Bonferroni correction</strong> to safeguard against erroneous conclusions.
+              This correction method ensured that our conclusions maintained steadfastness and reliability. Through
+              simulated scenarios, we validated the correction's efficacy, observing an observed <strong>Type I error
+                rate of 0.016</strong>—effectively aligned with the adjusted significance level of
+              <strong>0.0167</strong>.
+            </p>
+
+            <br>
+
+            <a href="https://www.kaggle.com/code/mirajahmedlearns/a-b-testing-of-themes-using-python" target="_blank"
+              class="custom-link">Explore the A/B Testing of Themes using Python notebook here</a>.
+
+            <br>
+            <br>
+
+            <p>
+              <strong><u>Conclusion: Navigating User Engagement with Precision</u></strong>
+              <br>
+              In this captivating journey, our exploration and analyses have cast a revealing light on the intricate
+              dance between
+              website themes and user engagement. While Click Through Rates demonstrated sensitivity to theme changes,
+              Conversion
+              Rates and Cart Interactions remained steadfast in the face of aesthetic variations. Our meticulous
+              deployment of the
+              Bonferroni correction fortified our findings, offering a beacon for designers, developers, and marketers.
+          </div>
+
+
+        </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
