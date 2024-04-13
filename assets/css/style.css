@@ -43,16 +43,9 @@ h1::before {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: width 0.3s ease-in-out;
 }
 
-h1:hover::before {
-  width: 0; /* Set width to 0 to remove the underline */
-}
 
-h1:hover {
-  transform: scale(1.05); /* Increase the size on hover */
-}
 
 
 
@@ -561,9 +554,7 @@ strong {
 /*--------------------------------------------------------------
 # additional links
 --------------------------------------------------------------*/
-
 .additional-links {
-  text-align: left; /* Center the text in larger screens */
   margin-top: 20px;
 }
 
@@ -571,52 +562,24 @@ strong {
   display: inline-block;
   text-decoration: none;
   color: #333;
-  position: relative;
-  overflow: hidden;
+  padding: 10px 20px;
   border-radius: 8px;
-  transition: color 0.3s ease-in-out;
-  margin: 10px 0;
-}
-
-.additional-links a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(45deg, #3498db, #2980b9);
-  z-index: -1;
-  border-radius: 8px;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .additional-links a:hover {
   color: #fff;
+  background-color: #3498db; /* Change background color on hover */
 }
 
-.additional-links a:hover::before {
-  transform: scaleX(1);
+.additional-links .kaggle {
+  background-color: #cfeafb; /* Different color for Kaggle link */
 }
 
-.additional-links .kaggle::before {
-  background: linear-gradient(45deg, #00BFFF, #1E90FF);
+.additional-links .tableau {
+  background-color: #cfeafb; /* Different color for Tableau link */
 }
 
-.additional-links .tableau::before {
-  background: linear-gradient(45deg, #8A2BE2, #9932CC);
-}
-
-/* Add more gradients for other links as needed */
-
-.additional-links span {
-  display: block;
-  padding: 15px;
-  font-size: 16px;
-  font-weight: bold;
-}
 
 @media (max-width: 767px) {
   /* Adjust styles for smaller screens */
